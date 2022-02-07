@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         b7 = findViewById(R.id.button7);
         b8 = findViewById(R.id.button8);
         b9 = findViewById(R.id.button9);
-        b0 = findViewById(R.id.button10);
+        b0 = findViewById(R.id.button0);
 
         ec = new Ecouteur();
         b1.setOnClickListener(ec);
@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPass = "";
                 code.setText("");
             }
+
         }
     }
 }

@@ -1,0 +1,9 @@
+[branch]
+	autosetuprebase = always
+[user]
+	name = robertonight
+	email = roberto.nightingale@hotmail.com
+	password = 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
+[core]
+	autocrlf = true
+
