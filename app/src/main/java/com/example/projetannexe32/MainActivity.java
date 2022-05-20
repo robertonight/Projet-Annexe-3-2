@@ -9,10 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0;
-    EditText code;
+    TextView test;
     String passwd;
     String currentPass;
     String currentValue;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         passwd = "1939";
         currentPass = "";
 
-        code = findViewById(R.id.champResultat);
+        test = findViewById(R.id.test);
 
         b1 = findViewById(R.id.button1);
         b2 = findViewById(R.id.button2);
@@ -85,14 +86,16 @@ public class MainActivity extends AppCompatActivity {
             else currentValue = "0";
 
             currentPass += currentValue;
-            code.setText(currentPass);
+
+
+
+
 
             if (passwd.length() == currentPass.length()) {
                 if (passwd.equals(currentPass))
                     parent.setBackgroundColor(Color.rgb(34,139,34));
                 else parent.setBackgroundColor(Color.rgb(202,0,42));
                 currentPass = "";
-                code.setText("");
             }
 
         }
